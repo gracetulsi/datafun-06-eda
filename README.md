@@ -19,6 +19,8 @@ Foundations of Data Analytics, Module 6. Custom EDA Project.
 9. Created the project virtual environment with py -m venv .venv.
 10. Activated the virtual environment with .venv\Scripts\Activate.
 11. Installed project dependencies with py -m pip install jupyterlab pandas pyarrow matplotlib seaborn.
+12. Upgraded pip, setuptools, and wheel with py -m pip install --upgrade pip setuptools wheel.
+13. Installed all requirements.txt dependencies with py -m pip install --upgrade -r requirements.txt.
 
 ## Reminder
 Activate the virtual environment every time you open a new terminal:
@@ -37,4 +39,6 @@ git push -u origin main
 py -m venv .venv
 .venv\Scripts\Activate
 py -m pip install jupyterlab pandas pyarrow matplotlib seaborn
+py -m pip install --upgrade pip setuptools wheel
+py -m pip install --upgrade -r requirements.txt
 ```
