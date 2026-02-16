@@ -4,6 +4,8 @@ Foundations of Data Analytics, Module 6. Custom EDA Project.
 **Author:** Grace Tulsi  
 **Date:** February 2026  
 **Purpose:** Perform exploratory data analysis (EDA) on a dataset using Jupyter, pandas, and Seaborn.
+**Dataset:** Students Performance in Exams  
+**Source:** [Kaggle - Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 ## Initial Setup
 1. Created this repo on GitHub with a default README.
@@ -24,6 +26,9 @@ Foundations of Data Analytics, Module 6. Custom EDA Project.
 14. Created gracetulsi_eda.ipynb notebook in the root project folder.
 15. Added Markdown introduction cell with title, author, date, and purpose.
 16. Added Python cell with import statements for matplotlib, pandas, and seaborn.
+17. Downloaded Students Performance in Exams dataset from Kaggle.
+18. Created data/raw/ and data/processed/ folders.
+19. Added StudentsPerformance.csv to data/raw/.
 
 ## Reminder
 Activate the virtual environment every time you open a new terminal:
