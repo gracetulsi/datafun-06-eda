@@ -21,6 +21,9 @@ Foundations of Data Analytics, Module 6. Custom EDA Project.
 11. Installed project dependencies with py -m pip install jupyterlab pandas pyarrow matplotlib seaborn.
 12. Upgraded pip, setuptools, and wheel with py -m pip install --upgrade pip setuptools wheel.
 13. Installed all requirements.txt dependencies with py -m pip install --upgrade -r requirements.txt.
+14. Created gracetulsi_eda.ipynb notebook in the root project folder.
+15. Added Markdown introduction cell with title, author, date, and purpose.
+16. Added Python cell with import statements for matplotlib, pandas, and seaborn.
 
 ## Reminder
 Activate the virtual environment every time you open a new terminal:
