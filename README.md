@@ -4,8 +4,23 @@ Foundations of Data Analytics, Module 6. Custom EDA Project.
 **Author:** Grace Tulsi  
 **Date:** February 2026  
 **Purpose:** Perform exploratory data analysis (EDA) on a dataset using Jupyter, pandas, and Seaborn.
+
+## Dataset Description
+
 **Dataset:** Students Performance in Exams  
-**Source:** [Kaggle - Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+**Source:** [Kaggle - Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)  
+**Records:** 1,000
+
+| Column | Description | Type |
+|--------|-------------|------|
+| gender | Male or female | Categorical |
+| race/ethnicity | Student group (A, B, C, D, E) | Categorical |
+| parental level of education | Highest education level of parent | Categorical |
+| lunch | Standard or free/reduced program | Categorical |
+| test preparation course | Completed or none | Categorical |
+| math score | Math exam score (0-100) | Numeric |
+| reading score | Reading exam score (0-100) | Numeric |
+| writing score | Writing exam score (0-100) | Numeric |
 
 ## Initial Setup
 1. Created this repo on GitHub with a default README.
