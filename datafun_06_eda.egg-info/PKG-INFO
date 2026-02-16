@@ -1,3 +1,30 @@
+Metadata-Version: 2.4
+Name: datafun-06-eda
+Version: 0.1.0
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+Requires-Dist: ipykernel>=7.1.0
+Requires-Dist: ipython>=9.9.0
+Requires-Dist: pandas>=3.0.0
+Requires-Dist: pyarrow>=20.0.0
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: matplotlib>=3.8.0
+Provides-Extra: dev
+Requires-Dist: bandit>=1.7.5; extra == "dev"
+Requires-Dist: packaging>=26.0; extra == "dev"
+Requires-Dist: pre-commit>=4; extra == "dev"
+Requires-Dist: pytest>=9.0.2; extra == "dev"
+Requires-Dist: pytest-cov>=7.0.0; extra == "dev"
+Requires-Dist: pyright>=1.1; extra == "dev"
+Requires-Dist: ruff>=0.9; extra == "dev"
+Requires-Dist: validate-pyproject>=0.11.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mike>=2.1.3; extra == "docs"
+Requires-Dist: mkdocs>=1.5; extra == "docs"
+Requires-Dist: mkdocs-material>=9; extra == "docs"
+Requires-Dist: mkdocs-static-i18n>=1.3.0; extra == "docs"
+Requires-Dist: mkdocstrings[python]>=1.0.2; extra == "docs"
+
 # datafun-06-eda
 Foundations of Data Analytics, Module 6. Custom EDA Project.
 

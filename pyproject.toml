@@ -1,0 +1,130 @@
+# ============================================================
+# pyproject.toml (datafun-06-eda project configuration)
+# ============================================================
+
+[project]
+name = "datafun-06-eda"
+readme = "README.md"
+requires-python = ">=3.14"
+version = "0.1.0"
+
+dependencies = [
+    "ipykernel>=7.1.0",
+    "ipython>=9.9.0",
+    "pandas>=3.0.0",
+    "pyarrow>=20.0.0",
+    "seaborn>=0.13.0",
+    "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bandit>=1.7.5",
+    "packaging>=26.0",
+    "pre-commit>=4",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "pyright>=1.1",
+    "ruff>=0.9",
+    "validate-pyproject>=0.11.0",
+]
+
+docs = [
+    "mike>=2.1.3",
+    "mkdocs>=1.5",
+    "mkdocs-material>=9",
+    "mkdocs-static-i18n>=1.3.0",
+    "mkdocstrings[python]>=1.0.2",
+]
+
+# === PYRIGHT (TYPE CHECKING) ===
+
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.14"
+include = ["src"]
+extraPaths = ["src"]
+exclude = ["**/node_modules", "**/.*", ".venv", "**/__pycache__", "dist", "build"]
+
+reportMissingImports = "warning"
+reportMissingTypeStubs = "warning"
+reportIncompatibleVariableOverride = "warning"
+reportIncompatibleMethodOverride = "warning"
+reportOptionalSubscript = "warning"
+
+reportPrivateUsage = "none"
+useLibraryCodeForTypes = false
+
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownParameterType = "none"
+reportUnknownVariableType = "none"
+reportUnknownReturnType = "none"
+reportUnknownLambdaType = "none"
+reportUnknownNamedArgumentType = "none"
+
+venv = ".venv"
+venvPath = "."
+
+# === PYTEST ===
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = " --cov=src --cov-report=term-missing"
+
+# === RUFF (FORMATTING AND LINTING) ===
+
+[tool.ruff]
+exclude = [
+    ".eggs",
+    "*.egg-info",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "site",
+]
+line-length = 88
+preview = false
+target-version = "py313"
+unsafe-fixes = false
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "preserve"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "UP",
+    "B",
+]
+ignore = [
+    "E501",
+]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["D104", "F401"]
+"tests/**/*.py" = ["D", "B018", "B011", "S101"]
+"src/**/py.typed" = ["ALL"]
+"**/*.log" = ["ALL"]
+
+# === BUILD SYSTEM ===
+
+[build-system]
+requires = [
+    "setuptools>=80",
+    "setuptools_scm>=9.2.2",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
