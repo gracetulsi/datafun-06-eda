@@ -1,7 +1,9 @@
 # datafun-06-eda
+## Exploratory Data Analysis: Students Performance in Exams
+
 Foundations of Data Analytics, Module 6. Custom EDA Project.
 
-**Author:** Grace Tulsi  
+**Author:** [Grace Tulsi](https://github.com/gracetulsi) 
 **Date:** February 2026  
 **Purpose:** Perform exploratory data analysis (EDA) on a dataset using Jupyter, pandas, and Seaborn.
 
@@ -60,3 +62,23 @@ git add .
 git commit -m "descriptive message"
 git push -u origin main
 ```
+
+## Notebook Overview
+
+The notebook (`gracetulsi_eda.ipynb`) follows an 8-step EDA workflow:
+
+1. **Data Acquisition** — Load the dataset from CSV using pandas and pathlib.
+2. **Initial Data Inspection** — Confirm data types, check for missing values and duplicates.
+3. **Initial Descriptive Statistics** — Summary statistics for numerical and categorical columns.
+4. **Numerical Distributions** — Histograms for all score columns.
+5. **Categorical Distributions** — Count plots for all categorical columns.
+6. **Data Transformation & Feature Engineering** — Rename columns to snake_case, add average_score column.
+7. **Initial Visualizations** — Correlation heatmap, boxplots, scatter plots, and crosstabs exploring relationships between scores and SES, test prep, gender, parental education, and race/ethnicity.
+8. **Storytelling & Presentation** — Summary of findings with a focus on the independence of key variables and implications for educators.
+
+## Key Findings
+
+- Socioeconomic status (lunch type) has the strongest association with math scores (r = 0.35).
+- Test prep completion most strongly benefits writing scores (r = 0.31).
+- Gender-based gaps flip direction between math and reading/writing.
+- Key variables (SES, test prep, gender, parent education) are independent of each other — free from multicollinearity — allowing each factor's impact to be interpreted individually.
